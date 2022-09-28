@@ -7,6 +7,16 @@
            private int sideFacingUp;
            private int sides;
            private Random randomGenerator;
+      * if (x > 0) {
+         System.out.println("x is positive");
+      } else if(x == 0) {
+        System.out.println("x is 0");
+      } else {
+          if( x > -10 ) {
+             System.out.println("x is negative, but barely");
+         }
+         System.out.println("x is negative");
+      }
 2. Create a Dice **constructor** that takes an integer parameter **sides**, assigns it to the instance variable **sides**, and initializes an instance of the **Random** class.
 3. Add two methods to the Dice class
     * Method 1 should be named **roll** and should use **randomGenerator** to generate a random number between 1 and **sides**, and assign that number to the instance variable **sideFacingUp**
