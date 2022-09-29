@@ -19,7 +19,6 @@ public class Dice {
     }
 
     public int view() {
-        System.out.println(sideFacingUp);
         return sideFacingUp;
     }
 }

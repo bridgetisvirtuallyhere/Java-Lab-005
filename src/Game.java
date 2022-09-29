@@ -36,10 +36,10 @@ public class Game {
 // then using conditions needs to determine which Player's score is highest, and finally
 // return the winning Player's name.
     public String announceWinner() {
-        System.out.printf("Player 1: %s %d %n", p1.getName(), p1.getScore());
-        System.out.printf("Player 2: %s %d %n", p2.getName(), p2.getScore());
+        System.out.printf("Player 1: %s %nScore = %d %n", p1.getName(), p1.getScore());
+        System.out.printf("Player 2: %s %nScore = %d %n", p2.getName(), p2.getScore());
         if (p1.getScore() > p2.getScore()) {
-            System.out.println("Winner " + p1.getName());
+            System.out.println("Winner: " + p1.getName());
             return p1.getName();
         } else if (p1.getScore() == p2.getScore()){
             System.out.println("Tie");
